@@ -1,4 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
+
+
 class BasicModelBox extends React.Component {
   constructor(props) {
     super(props);
@@ -22,6 +24,7 @@ class BasicModelBox extends React.Component {
               right:0;
               bottom:0;
               overflow:scroll;
+              z-index:999999;
               background-color:rgba(150,150,150,.5);
             }
               .ModelBox-Model-close{

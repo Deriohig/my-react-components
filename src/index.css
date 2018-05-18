@@ -3,3 +3,86 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+*{
+
+     box-sizing: border-box;
+}
+
+ol{
+  display:inline-block;
+  position:relative;
+  margin:0 auto;
+  border-radius:20px;
+
+}
+.react-pagination{
+  margin:20px 0;
+}
+.react-pagination-form{
+  display: inline-block;
+  margin:0 10px;
+}
+ol li{
+  cursor: pointer;
+  display:inline-block;
+  position: relative;
+  padding:10px 15px;
+
+
+}
+ol li.react-pagination-number:first-child{
+  padding:10px 15px;
+  border-radius: 0;
+}
+ol li:first-child{
+    border-radius:18px 0 0 18px;
+}
+ol li:last-child{
+    border-radius:0 18px 18px 0;
+}
+ol li:hover{
+  background-color:darkorange;
+  color:white;
+}
+input[type='number']{
+
+  height:40px;
+  margin:0 5px;
+}
+.pagination-dots-after:before{
+  content:'...';
+  padding-right: 25px;
+
+}
+
+.pagination-dots-before:after{
+  content:'...';
+  padding-left: 20px;
+}
+.react-pagination-number:not(.pagination-dots-before):not(.pagination-dots-after){
+  width:48px;
+}
+.pagination-previousdots .react-pagination-number:last-child::before{
+  content:'...';
+  padding-right: 20px;
+}
+ol li.react-pagination-next:hover, ol li.react-pagination-previous:hover{
+  background-color:darkorange;
+  color:white;
+
+}
+ol li.react-pagination-next, ol li.react-pagination-previous{
+  background-color:lightgrey;
+  text-transform: uppercase;
+  font-size: 13px;
+  height:38px;
+  line-height: 20px;
+  letter-spacing: .050em;
+  -webkit-user-select: none; /* Chrome/Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+}
+ol li.current{
+  color:white;
+  background-color: darkorange;
+}
