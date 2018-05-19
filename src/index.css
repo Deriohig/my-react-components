@@ -28,11 +28,11 @@ ol li{
   position: relative;
   padding:10px 15px;
 
-
+  font-weight: 300;
 }
 ol li.react-pagination-number:first-child{
   padding:10px 15px;
-  border-radius: 0;
+
 }
 ol li:first-child{
     border-radius:18px 0 0 18px;
@@ -41,7 +41,7 @@ ol li:last-child{
     border-radius:0 18px 18px 0;
 }
 ol li:hover{
-  background-color:darkorange;
+  background-color:#2c3e50;
   color:white;
 }
 input[type='number']{
@@ -52,6 +52,11 @@ input[type='number']{
 .pagination-dots-after:before{
   content:'...';
   padding-right: 25px;
+
+}
+
+pagination-dots-after span{
+font-size:13px;
 
 }
 
@@ -67,13 +72,14 @@ input[type='number']{
   padding-right: 20px;
 }
 ol li.react-pagination-next:hover, ol li.react-pagination-previous:hover{
-  background-color:darkorange;
+  background-color:#2c3e50;
   color:white;
 
 }
 ol li.react-pagination-next, ol li.react-pagination-previous{
   background-color:lightgrey;
   text-transform: uppercase;
+  font-weight: 300;
   font-size: 13px;
   height:38px;
   line-height: 20px;
@@ -84,5 +90,5 @@ ol li.react-pagination-next, ol li.react-pagination-previous{
 }
 ol li.current{
   color:white;
-  background-color: darkorange;
+  background-color: #2c3e50;
 }
